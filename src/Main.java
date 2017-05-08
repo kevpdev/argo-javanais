@@ -10,13 +10,11 @@ public class Main {
 		String [] strArray = str.split(", ");
 		
 		for (int i = 0; i < strArray.length; i++) {
-			System.out.println(verification(strArray[i], voy, cons));
-		}
-		
-
+			System.out.println(transformation(strArray[i], voy, cons));
+		}		
 	}
 	
-	public static String verification(String str, String voy, String cons){
+	public static String transformation(String str, String voy, String cons){
 		int cptInsert = 0; // pour avoir le nombre de "av" inséré.
 		StringBuilder mot= new StringBuilder(str);
 		String[] strArray = mot.toString().split("");
